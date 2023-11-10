@@ -42,7 +42,12 @@ const Question = ({ index, onTimeOut, onSelect }) => {
   }
   return (
     <div id='question'>
-      <QuestionTimer timeout={timer} onTimeOut={onTimeOut} mode={answerState} />
+      <QuestionTimer
+        key={timer}
+        timeout={timer}
+        onTimeOut={answer.selectedAnswer === '' ? onTimeOut : null}
+        mode={answerState}
+      />
       <h2>{questions[index].text}</h2>
       <Answers
         answers={questions[index].answers}
