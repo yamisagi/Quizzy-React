@@ -71,6 +71,9 @@ In this project I built a Quiz App using ReactJS and Vite. I used [Bun](https://
 ## Roadmap
 
 - [x] Project Setup
+- [x] Create the Header Component
+- [x] Create the Quiz Component
+- [x] Implement the Quiz Logic 
 
 
 
