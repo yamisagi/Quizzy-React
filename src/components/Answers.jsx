@@ -14,7 +14,7 @@ const Answers = ({ answers, selectedAnswer, answerState, onSelect }) => {
       {shuffledAnswersRef.current.map((answer) => {
         let classes = '';
         const isSelected = selectedAnswer === answer;
-        if (answerState === 'answered' && isSelected) {
+        if (isSelected) {
           classes = 'selected';
         }
         if (
@@ -27,9 +27,9 @@ const Answers = ({ answers, selectedAnswer, answerState, onSelect }) => {
           <li key={answer} className='answer'>
             <button
               className={classes}
+              disabled={answerState !== ''}
               onClick={() => {
                 onSelect(answer);
-                console.log(answer);
               }}
             >
               {answer}
