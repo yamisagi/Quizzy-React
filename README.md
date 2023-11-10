@@ -74,6 +74,17 @@ In this project I built a Quiz App using ReactJS and Vite. I used [Bun](https://
 - [x] Create the Header Component
 - [x] Create the Quiz Component
 - [x] Implement the Quiz Logic 
+- [x] Create the Summary Component
+- [x] Create Question Timer Component
+- [x] Implement the Timer Logic
+- [x] Implement the Answer Logic
+- [x] Handle Re-rendering when the user selects an answer or the timer runs out with key prop
+- [x] Fix the bug where the user can select multiple answers
+- [x] Implement Styles for the Quiz Component
+- [x] Implement Styles for the Summary Component
+- [x] Clean up the code
+- [x] Deploy the project to Netlify
+- [ ] Use [Trivia DB](https://opentdb.com/) API to fetch questions
 
 
 
