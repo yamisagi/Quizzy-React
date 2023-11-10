@@ -5,15 +5,13 @@ const QuestionTimer = ({ timeout, onTimeOut }) => {
 
   useEffect(() => {
     const timer = setTimeout(onTimeOut, timeout);
-    console.log('Mounted Timer');
+
     return () => {
-      console.log('Unmounted Timer');
       clearTimeout(timer);
     };
   }, [onTimeOut, timeout]);
 
   useEffect(() => {
-    console.log('Mounted Interval');
     const interval = setInterval(() => {
       setRemainingTime((prevTime) => {
         return prevTime - 100;
@@ -21,7 +19,6 @@ const QuestionTimer = ({ timeout, onTimeOut }) => {
     }, 100);
 
     return () => {
-      console.log('UnMounted Interval');
       clearInterval(interval);
     };
   }, []);
